@@ -40,7 +40,7 @@ const Home = () => {
       screenPosition = [0, -4, -4];
     }
 
-    return [screenScale, screenPosition, rotation];
+    return [screenScale, screenPosition];
   };
 
   const [islandScale, islandPosition, islandRotation] =
