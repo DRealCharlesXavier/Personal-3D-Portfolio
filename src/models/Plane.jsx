@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+
+import planeScene from "../assets/3d/plane.glb";
+import { useGLTF } from "@react-three/drei";
 
 const Plane = () => {
-  return (
-    <div>Plane</div>
-  )
-}
+  const { scene, animations } = useGLTF(planeScene);
 
-export default Plane
+ return (
+  <mesh>
+   <primitive object={scene} />
+  </mesh>
+ )
+};
+
+export default Plane;
